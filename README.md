@@ -1,5 +1,11 @@
 ###
 
+##General Info
+This project is purely a front-end tool for creating workout programs.
+It was made only for my own personal entertainment and it was not meant for serious use.
+The website was inspired by Netninjas pizza ordering website.
+My website is accessible in Netlify at: https://loving-goldwasser-d7ef4f.netlify.app/
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
