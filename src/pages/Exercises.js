@@ -42,8 +42,11 @@ const Exercises = () => {
       >
         <h3>Vaihe 2/3: Valitse Itsellesi Sopivat Harjoitukset</h3>
         <ExerciseSelector/>
+        <Link to="/split">
+          <motion.button variants={buttonVariants} whileHover="hover">Edellinen</motion.button>
+        </Link>
         <Link to="/complete">
-          <motion.button variants={buttonVariants} whileHover="hover">Viimeistele</motion.button>
+          <motion.button variants={buttonVariants} whileHover="hover">Seuraava</motion.button>
         </Link>
       </motion.div>
   )

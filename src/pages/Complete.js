@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import {motion} from 'framer-motion';
 import {WorkoutContext} from "../context/WorkoutContext";
+import {Link} from "react-router-dom";
 
 const containerVariants = {
   hidden: {
@@ -33,6 +34,19 @@ const childVariants = {
   },
   visible: {
     opacity: 1,
+  }
+}
+
+const buttonVariants = {
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 4px rgb(255,255,255)",
+    boxShadow: "0px 0px 4px rgb(255,255,255)",
+    transition: {
+      duration: 0.3,
+      repeat: Infinity,
+      repeatType: 'reverse'
+    }
   }
 }
 
@@ -72,6 +86,9 @@ const Complete = () => {
             <WorkoutCard header={"Treeni 5: "} exercise={workoutsContext.exercises5}/>
           }
         </div>
+        <Link to="/exercises">
+          <motion.button variants={buttonVariants} whileHover="hover">Edellinen</motion.button>
+        </Link>
       </motion.div>
   )
 }
