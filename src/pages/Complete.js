@@ -7,7 +7,7 @@ const containerVariants = {
     opacity: 0,
     x: '100vw',
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.2,
     }
   },
   visible: {
@@ -39,10 +39,6 @@ const childVariants = {
 const Complete = () => {
   const workoutsContext = useContext(WorkoutContext)
 
-  console.log('workoutsContext.exercises1: ', workoutsContext.exercises1)
-  console.log('workoutsContext.exercises2: ', workoutsContext.exercises2)
-  console.log('workoutsContext.split: ', workoutsContext.split)
-
   const hasThreeOrMore = () => {
     return workoutsContext.split > 1;
   }
@@ -67,13 +63,13 @@ const Complete = () => {
           <WorkoutCard header={"Treeni 1: "} exercise={workoutsContext.exercises1}/>
           <WorkoutCard header={"Treeni 2: "} exercise={workoutsContext.exercises2}/>
           { hasThreeOrMore() &&
-            <WorkoutCard header={"Treeni 3: "} exercise={workoutsContext.exercises4}/>
+            <WorkoutCard header={"Treeni 3: "} exercise={workoutsContext.exercises3}/>
           }
           { hasFourOrMore() &&
-            <WorkoutCard header={"Treeni 4: "} exercise={workoutsContext.exercises5}/>
+            <WorkoutCard header={"Treeni 4: "} exercise={workoutsContext.exercises4}/>
           }
           { hasFiveOrMore() &&
-            <WorkoutCard header={"Treeni 5: "} exercise={workoutsContext.exercises6}/>
+            <WorkoutCard header={"Treeni 5: "} exercise={workoutsContext.exercises5}/>
           }
         </div>
       </motion.div>
