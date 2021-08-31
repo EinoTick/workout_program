@@ -16,6 +16,10 @@ const SideBar = () => {
     history.push('');
   }
 
+  const redirectToWorkouts = () => {
+    history.push('/workouts');
+  }
+
   return (
       <ProSidebar collapsed={isCollapsed}>
         <div className="sidebar-img" onClick={() => SetIsCollapsed(!isCollapsed)}/>
@@ -35,7 +39,7 @@ const SideBar = () => {
             <MenuItem icon={<Home/>} onClick={() => redirectToHome()}>Home</MenuItem>
           </Menu>
           <Menu iconShape="circle">
-            <MenuItem icon={<Workout/>}>Valmiit Treeniohjelmat</MenuItem>
+            <MenuItem icon={<Workout/>} onClick={() => redirectToWorkouts()}>Valmiit Treeniohjelmat</MenuItem>
           </Menu>
           <Menu iconShape="circle">
             <SubMenu title="Liike Demot" icon={<Demo/>}>

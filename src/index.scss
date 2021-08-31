@@ -140,6 +140,48 @@ header {
   padding: 1em 2em;
 }
 
+/*Premade workouts*/
+.workouts {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  h3 {}
+  .workouts__explain {
+    font-size: 0.5rem;
+    font-weight: lighter;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: lightblue;
+    &:hover {
+      color: #88abb7;
+    }
+  }
+  .workout__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+  }
+  .workout__card {
+
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+  }
+  .workouts__card-header {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  .workouts__card-subheader {
+    font-size: 0.8rem;
+  }
+  .workouts__exercises {
+    border: white solid 2px;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(black, 0.5);
+  }
+  .workouts__card-exercise {}
+}
+
 /*** Sidebar ***/
 .pro-sidebar {
   position: fixed !important;
