@@ -4,7 +4,8 @@ import 'react-pro-sidebar/dist/css/styles.css';
 import navIcon from '../assets/icons/nav_icon.svg'
 import { ReactComponent as Home } from '../assets/icons/home.svg';
 import { ReactComponent as Workout } from '../assets/icons/workout.svg';
-import { ReactComponent as Demo } from '../assets/icons/demot.svg';
+import { ReactComponent as Info } from '../assets/icons/info.svg';
+import { ReactComponent as Demo } from '../assets/icons/list.svg';
 import {useHistory} from "react-router-dom";
 
 const SideBar = () => {
@@ -18,6 +19,10 @@ const SideBar = () => {
 
   const redirectToWorkouts = () => {
     history.push('/workouts');
+  }
+
+  const redirectToInfo = () => {
+    history.push('/info');
   }
 
   return (
@@ -40,6 +45,9 @@ const SideBar = () => {
           </Menu>
           <Menu iconShape="circle">
             <MenuItem icon={<Workout/>} onClick={() => redirectToWorkouts()}>Valmiit Treeniohjelmat</MenuItem>
+          </Menu>
+          <Menu iconShape="circle">
+            <MenuItem icon={<Info/>} onClick={() => redirectToInfo()}>Tietoa Treenaamisesta</MenuItem>
           </Menu>
           <Menu iconShape="circle">
             <SubMenu title="Liike Demot" icon={<Demo/>}>

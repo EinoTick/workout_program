@@ -9,6 +9,7 @@ import {AnimatePresence} from 'framer-motion';
 import SideBar from "./components/SideBar";
 import {WorkoutProvider} from "./context/WorkoutContext";
 import Workouts from "./pages/Workouts";
+import Info from "./pages/Info";
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
               </Route>
               <Route path="/workouts">
                 <Workouts/>
+              </Route>
+              <Route path="/info">
+                <Info/>
               </Route>
               <Route path="/">
                 <Home/>

@@ -22,7 +22,7 @@ const Workouts = () => {
   const history = useHistory();
 
   const redirectToHome = () => {
-    history.push('/help');
+    history.push('/info');
   }
 
   return (
