@@ -6,7 +6,7 @@ import Split from './pages/Split';
 import Exercises from './pages/Exercises';
 import Complete from './pages/Complete';
 import {AnimatePresence} from 'framer-motion';
-import SideBar from "./components/SideBar";
+import SideBar from "./components/sidebar/SideBar";
 import {WorkoutProvider} from "./context/WorkoutContext";
 import Workouts from "./pages/Workouts";
 import Info from "./pages/Info";

@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import {Menu, MenuItem, ProSidebar, SidebarContent, SidebarFooter, SidebarHeader, SubMenu} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
-import navIcon from '../assets/icons/nav_icon.svg'
-import { ReactComponent as Home } from '../assets/icons/home.svg';
-import { ReactComponent as Workout } from '../assets/icons/workout.svg';
-import { ReactComponent as Info } from '../assets/icons/info.svg';
-import { ReactComponent as Demo } from '../assets/icons/list.svg';
+import navIcon from '../../assets/icons/nav_icon.svg'
+import { ReactComponent as Home } from '../../assets/icons/home.svg';
+import { ReactComponent as Workout } from '../../assets/icons/workout.svg';
+import { ReactComponent as Info } from '../../assets/icons/info.svg';
+import { ReactComponent as Demo } from '../../assets/icons/list.svg';
 import {useHistory} from "react-router-dom";
+import './sidebar.scss';
 
 const SideBar = () => {
   const [isCollapsed, SetIsCollapsed] = useState(true);
