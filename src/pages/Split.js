@@ -97,7 +97,7 @@ const Split = () => {
         <ul>
           {splitOptions.map(split => {
             //WorkoutContext.split shows the id directly (there is no other data in it)
-            let spanClass = workoutsContext.split === split.id ? 'selected' : '';
+            let spanClass = workoutsContext.split === split.id && showButton ? 'selected' : '';
             return (
                 <motion.li key={split.id} onClick={() => updateSplit(split)} whileHover={{scale: 1.05}}>
                   <div className={'workout ' + spanClass}>
