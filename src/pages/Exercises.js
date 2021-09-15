@@ -41,6 +41,7 @@ const Exercises = () => {
                   exit="exit"
       >
         <h3>Vaihe 2/3: Valitse Itsellesi Sopivat Harjoitukset</h3>
+        <div className="exercises__sub-header">Voit valita useamman harjoituksen samasta valikosta</div>
         <ExerciseSelector/>
         <Link to="/split">
           <motion.button variants={buttonVariants} whileHover="hover">Edellinen</motion.button>

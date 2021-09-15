@@ -74,16 +74,16 @@ const Complete = () => {
       >
         <h2>Tallenna Harjoitus</h2>
         <div className="complete__card-grid">
-          <WorkoutCard header={"Treeni 1: "} exercise={workoutsContext.exercises1}/>
-          <WorkoutCard header={"Treeni 2: "} exercise={workoutsContext.exercises2}/>
+          <WorkoutCard header={"Treeni 1"} exercise={workoutsContext.exercises1}/>
+          <WorkoutCard header={"Treeni 2"} exercise={workoutsContext.exercises2}/>
           { hasThreeOrMore() &&
-            <WorkoutCard header={"Treeni 3: "} exercise={workoutsContext.exercises3}/>
+            <WorkoutCard header={"Treeni 3"} exercise={workoutsContext.exercises3}/>
           }
           { hasFourOrMore() &&
-            <WorkoutCard header={"Treeni 4: "} exercise={workoutsContext.exercises4}/>
+            <WorkoutCard header={"Treeni 4"} exercise={workoutsContext.exercises4}/>
           }
           { hasFiveOrMore() &&
-            <WorkoutCard header={"Treeni 5: "} exercise={workoutsContext.exercises5}/>
+            <WorkoutCard header={"Treeni 5"} exercise={workoutsContext.exercises5}/>
           }
         </div>
         <Link to="/exercises">

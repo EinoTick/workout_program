@@ -39,8 +39,8 @@ const ExerciseSelector = () => {
 
   const exerciseOptions = [...backOptions, ...legsOptions, ...chestOptions, ...ShoulderOptions];
 
-  //The workouts are split in different return categories so that the developer may later
-  //add different type of default workouts easily. However, it altering the contex api states
+  //The workouts were split in different return categories so that the developer could have later
+  //added different type of default workouts easily. However, altering the contex api states
   //is a better solution and these are merely a relics now.
   if (workoutsContext.split === 1) {
     return (

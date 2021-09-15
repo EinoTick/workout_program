@@ -3,6 +3,12 @@
   display: grid;
   grid-template-columns: 33% 33% 33%;
   gap: 1rem;
+  @media (max-width: 800px) {
+    grid-template-columns: 40% 40%;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 90%;
+  }
 
   .card {
     min-width: 8rem;
