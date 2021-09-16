@@ -40,14 +40,14 @@ const Workouts = () => {
         <h3>Koko Kropan Treenit</h3>
         <div className="workout__cards">
           <div className="workout__card">
-            <div className="workouts__card-header">Golden Six</div>
-            <CardExercises exercises={["Penkkipunnerrus", "Kyykky", "Hauiskääntö", "Leuanveto", "Pystypunnerrus", "Istumaannousu"]}/>
-          </div>
-          <div className="workout__card">
             <div className="workouts__card-header">Classic Fullbody</div>
             <CardExercises exercises={["Penkkipunnerrus", "Kyykky", "Hauiskääntö", "Leuanveto", "Pystypunnerrus", "Istumaannousu"]}/>
             <CardExercises exercises={["Penkkipunnerrus", "Kyykky", "Hauiskääntö", "Leuanveto", "Pystypunnerrus", "Istumaannousu"]}/>
           </div>
+        </div>
+        <div className="workout__card">
+          <div className="workouts__card-header">Golden Six</div>
+          <CardExercises exercises={["Penkkipunnerrus", "Kyykky", "Hauiskääntö", "Leuanveto", "Pystypunnerrus", "Istumaannousu"]}/>
         </div>
 
         <h3>2-jakoinen</h3>
